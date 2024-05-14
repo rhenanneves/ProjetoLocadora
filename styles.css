@@ -1,0 +1,165 @@
+/* Reset de Estilos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    
+}
+
+.navbar {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(44, 44, 44);
+    box-shadow: 0 2px 4px rgba(82, 81, 81, 0.626);
+    /* Adiciona sombra */
+}
+
+
+.navbar img {
+    height: 90px;
+    width: 140px;
+    /* Define a altura máxima da imagem */
+    margin-left: 20px;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+    /* Remove os marcadores de lista */
+
+}
+
+.navbar nav ul li {
+    margin: 0 10px;
+    /* Adiciona um pouco de espaço entre os itens da lista */
+    cursor: pointer;
+    /* Muda o cursor para indicar que os itens da lista são clicáveis */
+
+}
+
+.letras {
+    position: relative;
+    /* Para que o pseudo-elemento possa ser posicionado em relação a este elemento */
+    text-decoration: none;
+    color: #fd8d3d;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-right: 40px;
+    transition: color 0.3s ease;
+    /* Transição suave para a cor do texto */
+    text-transform: uppercase;
+}
+
+.letras::before {
+    content: '';
+    /* Adiciona um conteúdo vazio */
+    position: absolute;
+    /* Posicionamento absoluto em relação ao elemento pai (.letras) */
+    bottom: -3px;
+    /* Posiciona o quadrado abaixo do texto */
+    left: 0;
+    /* Alinha o quadrado à esquerda */
+    width: 100%;
+    /* Largura igual à largura do elemento pai */
+    height: 3px;
+    /* Altura do quadrado */
+    background-color: transparent;
+    /* Cor inicial transparente */
+    transition: background-color 0.3s ease;
+    /* Transição suave para a cor de fundo */
+}
+
+.letras:hover::before {
+    background-color: rgb(255, 160, 0);
+    /* Cor do quadrado quando o hover é acionado */
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.carousel-inner img {
+    width: 100%;
+    height: 599px;
+    object-fit: contain;
+}
+
+.carousel {
+    max-width: 800px;
+    margin: 20px auto;
+}
+.banner img{
+    width: 1330px;
+    height:350px;
+    margin-left: 280px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.card-body {
+    flex-grow: 1; /* Faz o conteúdo do card ocupar todo o espaço vertical disponível */
+}
+.card-body li{
+    list-style: none;
+    margin: 3px;
+}
+.card img {
+    width: 100%;
+    height: 200px; /* Altura fixa para todas as imagens dos cards */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorcer */
+    border-radius: 5px; /* Cantos arredondados */
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas iguais */
+    gap: 20px; /* Espaçamento entre os cards */
+}
+.botao{
+    display: inline-block;
+    background-color: #4CAF50; /* Verde mais escuro */
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px; /* Cantos arredondados */
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave de cor ao passar o mouse */
+    margin-top: 20px;
+}
+
+.botao:hover {
+    background-color: #45a049; /* Verde mais claro quando hover */
+}
+.button{
+    margin-left: 90px;
+    margin-top: 30px;
+}
