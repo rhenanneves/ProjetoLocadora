@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Locadora de Veículos</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Carros.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-zi5vujvkRlLq8EWpqy27p08w5n7jwuPE9b5nfe3/T0qypZlqgbrbFYYcvivmybHA" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
@@ -24,7 +24,7 @@
                         <li>Login</li>
                     </a>
 
-                    <a href="Carros.php" class="letras">
+                    <a href="" class="letras">
                         <li>Carros</li>
                     </a>
                     <a href="" class="letras">
@@ -34,33 +34,14 @@
             </nav>
         </div>
     </header>
+    <div class="containercarro">
 
-    <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/carro1.jpg" class="d-block" alt="Carro 1">
-            </div>
-            <div class="carousel-item">
-                <img src="img/carro2.jpg" class="d-block" alt="Carro 2">
-            </div>
-            <div class="carousel-item">
-                <img src="img/carro3.png" class="d-block" alt="Carro 3">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+    
+    <h1>Grupo de carros</h1>
+    <p>Os melhores carros da cidade voce só encontra aqui</p>
     </div>
-    <div class="banner">
-        <img src="img/banner.png" alt="">
-    </div>
-
     <div class="container">
+        
         <div class="card shadow-sm">
             <img src="img/card1.jpg" alt="">
             <div class="card-body">
@@ -112,11 +93,3 @@
             </div>
         </div>
     </div>
-
-    <footer>
-        <p>&copy; 2024 Locadora de Veículos</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-
-</html>
