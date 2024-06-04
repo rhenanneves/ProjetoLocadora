@@ -80,7 +80,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <div class="container">
         <h2>Reserva de Carro</h2>
-        <form action="processa_reserva.php" method="POST">
+        <?php
+        // Aqui vai o código PHP que você já possui
+        ?>
+        <form action="processa_reserva.php" method="POST" onsubmit="return enviarReserva()">
             <div class="form-group">
                 <label for="placa">Placa do Carro:</label>
                 <input type="text" id="placa" name="placa" required>
@@ -99,10 +102,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             <button type="submit" class="btn btn-primary">Reservar</button>
         </form>
+        <span id="msgReserva"></span> <!-- Aqui será exibida a mensagem -->
     </div>
     <footer>
         &copy; 2024 Locadora de Veículos
     </footer>
+
+    <!-- Adicionando o JavaScript -->
+    <script>
+        function enviarReserva() {
+            // Função para exibir a mensagem de reserva realizada com sucesso
+            document.getElementById("msgReserva").innerHTML = "<p>Reserva realizada com sucesso!</p>";
+
+            // Redirecionar para a página de pagamento após 2 segundos
+            setTimeout(function() {
+                window.location.href = "pagamento.php";
+            }, 2000);
+
+            // Retornar false para impedir o envio padrão do formulário
+            return false;
+        }
+    </script>
 </body>
 
 </html>
