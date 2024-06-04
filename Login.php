@@ -37,18 +37,18 @@
     </header>
 
     <div class="login-container">
-    <form action="process_login.php" method="post" class="login-form">
+    <form action="process_logincliente.php" method="post" class="login-form">
         <div class="form-section cliente">
             <h2>Login Cliente</h2>
             <div class="form-group">
-                <label for="cliente-username">Usuário</label>
-                <input type="text" id="cliente-username" name="cliente-username" required>
-            </div>
+            <label for="cliente-cpf">CPF</label>
+            <input type="text" id="cliente-cpf" name="cliente-cpf" required>
+        </div>
             <div class="form-group">
-                <label for="cliente-password">Senha</label>
-                <input type="password" id="cliente-password" name="cliente-password" required>
+                <label for="cliente-senha">Senha</label>
+                <input type="password" id="cliente-senha" name="cliente-senha" required>
             </div>
-            <p>Ainda não tem cadastro? <a href=""style="text-decoration: none; color:aqua">Clique Aqui</a></p></p>
+            <p>Ainda não tem cadastro? <a href="cadastro_clientes.php"style="text-decoration: none; color:aqua">Clique Aqui</a></p></p>
             <button type="submit" name="login-cliente">Entrar</button>
         </div>
     </form>

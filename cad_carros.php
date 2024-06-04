@@ -45,8 +45,12 @@
             </div>
             <div class="form-group">
                 <label for="disponibilidade">Disponibilidade</label>
-                <input type="text" id="disponibilidade" name="disponibilidade" required>
+                <select id="disponibilidade" name="disponibilidade" required>
+                    <option value="Disponível">Disponível</option>
+                    <option value="Alugado">Alugado</option>
+                </select>
             </div>
+
             <div class="form-group">
                 <label for="ano">Ano</label>
                 <input type="number" id="ano" name="ano" required>
