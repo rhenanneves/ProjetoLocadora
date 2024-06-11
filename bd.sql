@@ -57,7 +57,10 @@ CREATE TABLE Locacao (
     Valor_Total DECIMAL(7,2) NOT NULL,
     placa VARCHAR(6) NOT NULL,
     cpf VARCHAR(14) NOT NULL,
+    Modelo VARCHAR(50) NOT NULL,
+    FOREIGN KEY (Modelo) REFERENCES Carro(modelo),
     FOREIGN KEY(Placa) REFERENCES Carro(placa),
-    FOREIGN KEY(cpf) REFERENCES Cliente(cpf)
+    FOREIGN KEY(cpf) REFERENCES Cliente(cpf),
 );
 
+Drop table locacao;

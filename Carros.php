@@ -88,9 +88,10 @@ try {
                                 <li>Disponibilidade: <?=htmlspecialchars($contact['disponibilidade'], ENT_QUOTES)?></li>
                                 <li>Ano: <?=htmlspecialchars($contact['ano'], ENT_QUOTES)?></li>
                                 <li>Placa: <?=htmlspecialchars($contact['placa'], ENT_QUOTES)?></li>
+                                <li>Preço: R$ <?=htmlspecialchars($contact['preco'], ENT_QUOTES)?></li>
                             </ul>
                             <div class="button">
-                                <button class="botao"><a href="reserva.php" style="text-decoration:none; color:white;">Alugar</a></button>
+                                <button class="botao"><a href="reserva.php?placa=<?=htmlspecialchars($contact['placa'], ENT_QUOTES)?>" style="text-decoration:none; color:white;">Alugar</a></button>
                             </div>
                         </div>
                     </div>

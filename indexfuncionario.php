@@ -35,12 +35,12 @@
         <div class="card shadow-sm">
             <img src="img/funcionario.jpg" alt="">
             <div class="card-body">
-                <h1>Funcionário do mês</h1>
+                <h1>Listar Aluguéis</h1>
                 <p>
-                    Confira os destaques do mês, dos melhores funcionários.
+                    Confira todos os aluguéis realizados
                 </p>
                 <div class="button">
-                    <button class="botao">Acessar</button>
+                    <button class="botao"><a href="listar_alugueis.php">Acessar</a></button>
                 </div>
             </div>
         </div>
